@@ -8,6 +8,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Messentra - Azure Service Bus Desktop Explorer',
   description: 'A cross-platform desktop GUI for Azure Service Bus - browse resources, inspect and send messages, manage dead-letter queues.',
+  verification: {
+    google: 'dDvOV-OPQ0_nnzHvZZ8mR8YiJrZB0RgsjP2ZtyJthbU',
+  },
 }
 
 export default function RootLayout({
