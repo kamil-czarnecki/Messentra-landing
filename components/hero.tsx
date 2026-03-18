@@ -12,7 +12,7 @@ export function Hero() {
           {/* Logo */}
           <div className="mb-6 flex justify-center">
             <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo.svg`}
+              src="/logo.svg"
               alt="Messentra Logo"
               className="h-auto w-[220px] sm:w-[280px] lg:w-[320px]"
             />
