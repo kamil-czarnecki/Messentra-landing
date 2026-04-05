@@ -25,7 +25,7 @@ export function Hero() {
 
           {/* Description */}
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg text-pretty">
-            A cross-platform desktop GUI for Azure Service Bus — browse resources, 
+            A cross-platform desktop GUI for Azure Service Bus - browse resources, 
             inspect and send messages, manage dead-letter queues. Built with Blazor 
             and Electron.NET for Windows, macOS, and Linux.
           </p>

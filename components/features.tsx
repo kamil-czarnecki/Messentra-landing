@@ -1,35 +1,45 @@
-import { Network, FolderTree, Search, Mail, Send, KeyboardIcon } from "lucide-react";
+import { Network, FolderTree, Search, Mail, Send, UploadIcon, DownloadIcon, Folder, FlaskConical } from "lucide-react";
 
 const features = [
   {
     icon: Network,
     title: "Connection Management",
-    description: "Add and manage multiple namespace connections. Supports both Connection String and Entra ID (Azure AD) authentication.",
+    description: "Add, edit, and delete named namespace connections with Connection String or Entra ID (Azure AD) authentication. Manage multiple connections side by side.",
   },
   {
     icon: FolderTree,
     title: "Resource Explorer",
-    description: "Browse queues, topics, and subscriptions in a collapsible tree with live message counts for active and dead-letter queues.",
-  },
-  {
-    icon: Search,
-    title: "Smart Search & Filtering",
-    description: "Filter resources by name, namespace, or dead-letter status using smart search phrases with autocomplete.",
+    description: "Browse queues, topics, and subscriptions in a collapsible tree with live active and dead-letter message counts shown inline.",
   },
   {
     icon: Mail,
-    title: "Message Operations",
-    description: "Fetch, peek, receive, resend, complete, abandon, or dead-letter messages. Full control over message lifecycle.",
+    title: "Message Fetching & Operations",
+    description: "Peek (non-destructive) or Receive messages with PeekLock or ReceiveAndDelete. Complete, abandon, dead-letter, or resend with multi-select bulk actions.",
   },
   {
     icon: Send,
     title: "Send Messages",
-    description: "Send messages with JSON or plain text body, custom broker properties, and application properties.",
+    description: "Send messages with JSON (one-click formatting) or plain text body, full broker properties, and custom application key/value pairs.",
   },
   {
-    icon: KeyboardIcon,
-    title: "Keyboard Shortcuts",
-    description: "Quick navigation with keyboard shortcuts. F5 to refresh, arrow keys to navigate messages.",
+    icon: UploadIcon,
+    title: "Import & Export",
+    description: "Export messages to JSON for backup or replay, and import from JSON into any queue or topic. Jobs run in the background with status tracking.",
+  },
+  {
+    icon: Search,
+    title: "Smart Search & Filtering",
+    description: "Filter by name, namespace:x, or has:dlq using special-phrase autocomplete. Combine phrases freely for powerful triage.",
+  },
+  {
+    icon: Folder,
+    title: "Custom Virtual Folders",
+    description: "Organize resources into virtual folders per namespace by workflow, team, or incident context - without changing anything in Azure.",
+  },
+  {
+    icon: FlaskConical,
+    title: "Emulator Support",
+    description: "Connect to the Azure Service Bus Emulator for local development. View resources, send messages, and fetch messages without a live Azure subscription.",
   },
 ];
 
