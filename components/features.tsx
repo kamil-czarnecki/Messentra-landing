@@ -1,4 +1,4 @@
-import { Network, FolderTree, Search, Mail, Send, UploadIcon, DownloadIcon, Folder, FlaskConical } from "lucide-react";
+import { Network, FolderTree, Search, Mail, Send, UploadIcon, Folder, FlaskConical, Bot, LayoutGrid, ScrollText, Moon } from "lucide-react";
 
 const features = [
   {
@@ -37,9 +37,29 @@ const features = [
     description: "Organize resources into virtual folders per namespace by workflow, team, or incident context - without changing anything in Azure.",
   },
   {
+    icon: LayoutGrid,
+    title: "Customizable Message Grid",
+    description: "Add, remove, and reorder columns via a right-click context menu. Create named views from any column layout, switch between them instantly, and persist them across sessions.",
+  },
+  {
     icon: FlaskConical,
     title: "Emulator Support",
     description: "Connect to the Azure Service Bus Emulator for local development. View resources, send messages, and fetch messages without a live Azure subscription.",
+  },
+  {
+    icon: Bot,
+    title: "MCP Server",
+    description: "Built-in Model Context Protocol server lets AI agents (Claude, GitHub Copilot, Cursor) query your namespaces directly. Enable in Settings — browse resources, peek messages, and get DLQ summaries from your AI tool.",
+  },
+  {
+    icon: ScrollText,
+    title: "Activity Log",
+    description: "Persistent panel at the bottom of the window captures connection and fetch events across all namespaces, giving you a running audit trail without leaving the app.",
+  },
+  {
+    icon: Moon,
+    title: "Dark Mode",
+    description: "Built-in dark theme for comfortable extended use.",
   },
 ];
 
